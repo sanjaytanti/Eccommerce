@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="progressBar_colors">
+        <item>@color/red_300</item>
+        <item>@color/amber_300</item>
+        <item>@color/blue_300</item>
+    </integer-array>
+</resources>

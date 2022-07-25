@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "103789463918",
+    "project_id": "ecommerce-4d700",
+    "storage_bucket": "ecommerce-4d700.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103789463918:android:0cb5ffc262e05e07d7997f",
+        "android_client_info": {
+          "package_name": "com.shalinibusinesssolutions.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103789463918-dq6pq72olre8iam3fr7ek95h6i9oc5ch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAffJ0F7Uq_PnV-f1MeCf792qym3DCKm8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103789463918-dq6pq72olre8iam3fr7ek95h6i9oc5ch.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

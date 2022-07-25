@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/ll_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/ll_uncheck"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal" />
+
+
+
+        <TextView
+            android:id="@+id/couponCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ll_uncheck"
+            android:fontFamily="@font/heebobold"
+            android:text="DESH-AANA50"
+            android:textColor="@color/deepBlack"
+            android:textSize="20sp" />
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/couponDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_store"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/heeboregular"
+        android:text="50% off on purchase of order above 5000"
+        android:textColor="@color/deepBlack"
+        android:textSize="18sp" />
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/li_apply"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/couponDetails"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/apply_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:gravity="end"
+            android:text="Apply Now"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:iconTint="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/lightGray"
+        android:layout_below="@+id/li_apply"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+</RelativeLayout>

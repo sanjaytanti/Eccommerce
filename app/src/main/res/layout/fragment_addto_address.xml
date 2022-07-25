@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activities.ui.Address.AddtoAddressFragment">
+
+
+
+    <LinearLayout
+        android:id="@+id/lay_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/blue_A100">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_back" />
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter a new delivery address"
+                android:textColor="@color/deepBlack"
+                android:textSize="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/heebomedium"/>
+
+            <EditText
+                android:id="@+id/ed_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:fontFamily="@font/heeboregular"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/deepBlack" />
+
+            <EditText
+                android:id="@+id/ed_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:backgroundTint="@color/gray"
+                android:fontFamily="@font/heeboregular"
+                android:textColor="@color/deepBlack"/>
+
+            <EditText
+                android:id="@+id/ed_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pincode"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:maxLength="6"
+                android:backgroundTint="@color/gray"
+                android:fontFamily="@font/heeboregular"
+                android:textColor="@color/deepBlack"/>
+
+            <EditText
+                android:id="@+id/ed_town"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Town/City"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/gray"
+                android:inputType="text"
+                android:fontFamily="@font/heeboregular"
+                android:textColor="@color/deepBlack"/>
+
+            <EditText
+                android:id="@+id/ed_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/gray"
+                android:inputType="text"
+                android:fontFamily="@font/heeboregular"
+                android:textColor="@color/deepBlack"/>
+
+            <EditText
+                android:id="@+id/ed_flat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/heeboregular"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:hint="Flat, House no, Building, Company, Apartment"
+                android:textColor="@color/deepBlack"/>
+
+            <EditText
+                android:id="@+id/ed_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heeboregular"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="@color/gray"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:hint="Area, Colony, Street, Sector, Village"
+                android:textColor="@color/deepBlack"/>
+
+            <EditText
+                android:id="@+id/ed_landmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heeboregular"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="@color/gray"
+                android:inputType="text"
+                android:hint="Landmark e.g near Ranaghat Hospital"
+                android:textColor="@color/deepBlack"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/gray"
+                android:layout_marginTop="40dp"/>
+
+            <Button
+                android:id="@+id/ll_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="Confirm"
+                android:textSize="24dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:fontFamily="@font/heebobold"
+                android:background="@drawable/signup">
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
