@@ -36,7 +36,6 @@ class OrderDetailsFragment : Fragment(),View.OnClickListener {
         // Inflate the layout for this fragment
         binding= FragmentOrderDetailsBinding.inflate(layoutInflater,container,false)
 
-
         binding.recOrder.layoutManager= LinearLayoutManager(requireContext())
         orderDetailsAdapter= OrderDetailsAdapter()
         binding.progressbar.visibility=View.VISIBLE
@@ -44,6 +43,7 @@ class OrderDetailsFragment : Fragment(),View.OnClickListener {
         getAddressData()
         orderlistData()
         binding.orderID.text= "Order No :" + UserObject.orderProduct_orderid.toString()
+        binding.orderDelivery.text="Delivery Date :"
         binding.orderOn.text="Order Date :" + UserObject.orderdate
         binding.orderStatus.text="Not Delivered"
 
