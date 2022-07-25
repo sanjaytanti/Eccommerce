@@ -46,7 +46,6 @@ class OrderDetailsFragment : Fragment(),View.OnClickListener {
         binding.orderDelivery.text="Delivery Date :"
         binding.orderOn.text="Order Date :" + UserObject.orderdate
         binding.orderStatus.text="Not Delivered"
-
         binding.total.text=UserObject.orderProduct_ordervalue.toString()
         binding.netTotal.text=UserObject.orderProduct_ordervalue.toString()
         binding.totalPay.text=UserObject.orderProduct_ordervalue.toString()
