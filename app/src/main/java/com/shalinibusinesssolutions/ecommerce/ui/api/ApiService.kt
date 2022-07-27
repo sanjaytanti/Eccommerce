@@ -414,4 +414,7 @@ interface ApiService {
         @Field("addressid") addressid: Int?
     ): Call<AddressResponse>
 
+    @GET("getProduct.php")
+    fun getProductData(): Call<ProductResponse>
+
 }
