@@ -81,6 +81,7 @@ class SearchProductAdapter(var productInterFace: ProductInterFace): RecyclerView
             if (keyward.toString().isEmpty()) {
                 //filterdata.addAll(backupdata)
             } else {
+                //elasticsearch
                 for (model in backupdata) {
                     if (model.name.toString().toLowerCase(Locale.ROOT).contains(keyward.toString().toLowerCase(Locale.ROOT))) {
                         filterdata.add(model)

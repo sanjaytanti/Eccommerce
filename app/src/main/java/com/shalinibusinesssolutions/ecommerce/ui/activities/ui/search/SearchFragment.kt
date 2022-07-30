@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.SearchView
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.shalinibusinesssolutions.ecommerce.R
 import com.shalinibusinesssolutions.ecommerce.databinding.CartlayoutBinding
@@ -15,6 +17,7 @@ import com.shalinibusinesssolutions.ecommerce.ui.api.RetrofitClient
 import com.shalinibusinesssolutions.ecommerce.ui.apimodel.ProductList
 import com.shalinibusinesssolutions.ecommerce.ui.apimodel.ProductResponse
 import com.shalinibusinesssolutions.ecommerce.ui.utility.Fragmentinterface.ProductInterFace
+import com.shalinibusinesssolutions.ecommerce.ui.utility.nextFragment
 import com.shalinibusinesssolutions.ecommerce.ui.utility.popFragment
 import retrofit2.Call
 import retrofit2.Response
@@ -95,11 +98,11 @@ class SearchFragment : Fragment() ,ProductInterFace,View.OnClickListener{
         status: String,
         binding: CartlayoutBinding
     ) {
-        TODO("Not yet implemented")
     }
 
     override fun gotoProductPage(productList: ProductList) {
-        TODO("Not yet implemented")
+        val bundle = bundleOf("Id" to productList.ID)
+         requireActivity().nextFragment(R.id.action_searchFragment_to_productDetailsFragment,bundle)
     }
 
     override fun onClick(p0: View?) {

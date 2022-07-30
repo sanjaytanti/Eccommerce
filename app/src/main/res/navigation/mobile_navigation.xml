@@ -19,7 +19,11 @@
         android:id="@+id/searchFragment"
         android:name="com.shalinibusinesssolutions.ecommerce.ui.activities.ui.search.SearchFragment"
         android:label="fragment_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_productDetailsFragment"
+            app:destination="@id/productDetailsFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/cartFragment"
@@ -74,6 +78,9 @@
         <action
             android:id="@+id/action_productDetailsFragment_to_addtoAddressFragment"
             app:destination="@id/addtoAddressFragment" />
+        <action
+            android:id="@+id/action_productDetailsFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
     </fragment>
     <fragment
         android:id="@+id/viewBasketFragment"
