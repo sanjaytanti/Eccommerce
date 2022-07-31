@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.shalinibusinesssolutions.ecommerce.databinding.CategoryLayoutBinding
-import com.shalinibusinesssolutions.ecommerce.ui.activities.ui.home.HomeFragment
 import com.shalinibusinesssolutions.ecommerce.ui.apimodel.CategoryList
 import com.shalinibusinesssolutions.ecommerce.ui.apimodel.DashBoardResponse
 import com.shalinibusinesssolutions.ecommerce.ui.utility.Fragmentinterface.CategoryInterface

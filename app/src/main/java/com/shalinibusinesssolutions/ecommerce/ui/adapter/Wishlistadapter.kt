@@ -8,7 +8,6 @@ import coil.load
 import com.shalinibusinesssolutions.ecommerce.databinding.WishlistSinglerawBinding
 import com.shalinibusinesssolutions.ecommerce.ui.activities.ui.RecDiff.ViewCartRecDiff
 import com.shalinibusinesssolutions.ecommerce.ui.activities.ui.RecDiff.WishListRecDiff
-import com.shalinibusinesssolutions.ecommerce.ui.activities.ui.wishlist.WishlistFragment
 import com.shalinibusinesssolutions.ecommerce.ui.apimodel.CartDetailList
 import com.shalinibusinesssolutions.ecommerce.ui.apimodel.WishListDetailList
 import com.shalinibusinesssolutions.ecommerce.ui.utility.Fragmentinterface.ViewCardInterface
