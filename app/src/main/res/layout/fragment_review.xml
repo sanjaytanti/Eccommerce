@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:background="@color/white"
+    tools:context=".ui.Fragment.Rating.ReviewFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/productName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Potato - New"
+                    android:textColor="@color/deepBlack"
+                    android:fontFamily="@font/heebomedium"
+                    android:textSize="24dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true">
+
+
+                        <ImageView
+                            android:id="@+id/One"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/star" />
+
+
+                        <ImageView
+                            android:id="@+id/Two"
+                            android:layout_toRightOf="@+id/One"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/star"/>
+
+
+                        <ImageView
+                            android:id="@+id/Three"
+                            android:layout_toRightOf="@+id/Two"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/star"/>
+
+
+                        <ImageView
+                            android:id="@+id/Four"
+                            android:layout_toRightOf="@+id/Three"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/star"/>
+
+                        <ImageView
+                            android:id="@+id/Five"
+                            android:layout_toRightOf="@+id/Four"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/star"/>
+
+                        <TextView
+                            android:id="@+id/ratingPerson"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:text=""
+                            android:textColor="@color/blue"
+                            android:fontFamily="@font/heeboregular"
+                            android:layout_toRightOf="@+id/Five"
+                            android:layout_marginLeft="10dp"/>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/deepGary"
+                    android:text="Rate this product"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/heeboregular"
+                    android:textSize="18dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:id="@+id/starOne"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/rstar" />
+
+                    <ImageView
+                        android:id="@+id/starTwo"
+                        android:layout_toRightOf="@+id/starOne"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/rstar"/>
+
+
+                    <ImageView
+                        android:id="@+id/starThree"
+                        android:layout_toRightOf="@+id/starTwo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/rstar"/>
+
+                    <ImageView
+                        android:id="@+id/starFour"
+                        android:layout_toRightOf="@+id/starThree"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/rstar"/>
+
+                    <ImageView
+                        android:id="@+id/starFive"
+                        android:layout_toRightOf="@+id/starFour"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/rstar"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:text="Write A Review"
+                    android:fontFamily="@font/heeboregular"
+                    android:textColor="@color/deepGary"
+                    android:layout_marginTop="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/spinnerbox"
+                    android:layout_below="@+id/tv_suggestion"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/ed_Review"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="18dp"
+                        android:fontFamily="@font/heebomedium"
+                        android:textColor="@color/gray"
+                        android:hint="What did you like or dislike?"
+                        android:textColorHint="@color/gray"
+                        android:background="@null"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/ll_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Submit"
+                    android:textSize="24dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/heebobold"
+                    android:textAllCaps="false"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:background="@drawable/signup">
+
+                </Button>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Review"
+                    android:textColor="@color/deepOrange"
+                    android:fontFamily="@font/heebobold"
+                    android:layout_marginTop="20dp"/>
+
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/review_place" />
+
+                        <include layout="@layout/review_place" />
+
+                        <include layout="@layout/review_place" />
+
+                    </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rec_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:overScrollMode="never" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

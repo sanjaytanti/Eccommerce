@@ -400,8 +400,23 @@ interface ApiService {
     ): Call<getorderResponse>
 
     @FormUrlEncoded
+    @POST("getDeliveredOrderlist.php")
+    fun getDeliveredOrderlist(
+        @Field("userid") userid: Int?
+    ): Call<getorderResponse>
+
+
+    @FormUrlEncoded
     @POST("getorderproductdetails.php")
     fun getorderproductdetails(
+        @Field("userid") userid: Int?,
+        @Field("orderid") orderid: Int?
+    ): Call<getOrderDetailsResponse>
+
+
+    @FormUrlEncoded
+    @POST("getRatingDetails.php")
+    fun getRatingDetails(
         @Field("userid") userid: Int?,
         @Field("orderid") orderid: Int?
     ): Call<getOrderDetailsResponse>

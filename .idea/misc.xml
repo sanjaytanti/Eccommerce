@@ -12,12 +12,19 @@
         <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/fragment_home.xml" value="0.1796875" />
         <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/fragment_order.xml" value="0.1796875" />
         <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/fragment_order_details.xml" value="0.1796875" />
+        <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/fragment_product.xml" value="0.1796875" />
+        <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/fragment_profile.xml" value="0.1796875" />
+        <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/fragment_rating.xml" value="0.1796875" />
+        <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/fragment_rating_details.xml" value="0.1796875" />
+        <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/fragment_review.xml" value="0.165625" />
         <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/fragment_search.xml" value="0.1796875" />
         <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/fragment_wishlist.xml" value="0.1796875" />
         <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/order_singleraw.xml" value="0.1796875" />
         <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/orderdetails_singleraw.xml" value="0.1796875" />
+        <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/ratingdetailssingleraw.xml" value="0.1796875" />
         <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/searchlayoutsingleraw.xml" value="0.1796875" />
         <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/searchproductlayoutsigleraw.xml" value="0.1796875" />
+        <entry key="..\:/Digmay/Project/Ecommerce/Ecommerce/app/src/main/res/layout/wishlist_singleraw.xml" value="0.1796875" />
       </map>
     </option>
   </component>

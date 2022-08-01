@@ -170,7 +170,8 @@ data class orderlist(var orderid : Int, var addressid : Int,
                      var qty : Float,var varqty : String,
                      var unit : String,var discount : Float,
                      var Date: String,var Time :String,
-                     var Ordervalue: Float,var payment: Float)
+                     var Ordervalue: Float,var status: String,
+                     var Deliverydate: Date,var deliverytime: String)
 
 
 
@@ -182,5 +183,5 @@ data class orderdetilslist(var ID : Int, var productid : Int,
                      var varqty : String, var qty: Int,
                      var mrp: Int,var unit: String,var price  : Float,
                      var pricecal : Int,var discount : Float,
-                     var userid : Int,var orderid : Int
+                     var userid : Int,var orderid : Int,var Image: String
                      )

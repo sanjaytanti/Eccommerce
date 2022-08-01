@@ -168,7 +168,7 @@
                     android:layout_height="0dp" />
 
                 <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/buy_nowSummary"
+                    android:id="@+id/ratingAndReview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
@@ -191,7 +191,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:gravity="bottom|center_horizontal"
-                            android:text="Buy Now Summary"
+                            android:text="Rating and Review"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
