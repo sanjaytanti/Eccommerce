@@ -185,3 +185,13 @@ data class orderdetilslist(var ID : Int, var productid : Int,
                      var pricecal : Int,var discount : Float,
                      var userid : Int,var orderid : Int,var Image: String
                      )
+
+
+data class GetRatingDetailsResponse(var status: String,var message : String,var data : ArrayList<RatingDetailsList>)
+
+data class RatingDetailsList(var Id : Int, var userid : Int,
+                           var productid : String,var rating : Int,
+                           var Review : String)
+
+data class GetTotalRatingResponse(var status: String,var message : String,var data :NumberOfProductData)
+data class NumberOfProductData(var NumberOfProducts : Int)

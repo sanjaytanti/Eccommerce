@@ -7,11 +7,12 @@ import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import com.shalinibusinesssolutions.ecommerce.databinding.CartlayoutBinding
 import com.shalinibusinesssolutions.ecommerce.databinding.RatingdetailssinglerawBinding
+import com.shalinibusinesssolutions.ecommerce.ui.Fragmentinterface.Reviewinerface
 import com.shalinibusinesssolutions.ecommerce.ui.activities.ui.RecDiff.OrderdetailsRecDiff
 import com.shalinibusinesssolutions.ecommerce.ui.apimodel.orderdetilslist
 import java.lang.String
 
-class RatingDetailsAdapter: RecyclerView.Adapter<RatingDetailsAdapter.ViewHolder>() {
+class RatingDetailsAdapter(var reviewinerface: Reviewinerface): RecyclerView.Adapter<RatingDetailsAdapter.ViewHolder>() {
     var modelList = ArrayList<orderdetilslist>()
 
     class  ViewHolder(var binding : RatingdetailssinglerawBinding): RecyclerView.ViewHolder(binding.root)
@@ -27,6 +28,10 @@ class RatingDetailsAdapter: RecyclerView.Adapter<RatingDetailsAdapter.ViewHolder
             holder.binding.productPrice.text ="₹ " + String.format("% .2f",modelList[position].price).toString()
             holder.binding.productDescription.text = modelList[position].varqty
             holder.binding.productImage.load(modelList[position].Image)
+
+            holder.binding.ratingAndReview.setOnClickListener{
+                reviewinerface.reviewinerface(modelList[position],holder.binding,position)
+            }
 
         }
         catch (ex: Exception)

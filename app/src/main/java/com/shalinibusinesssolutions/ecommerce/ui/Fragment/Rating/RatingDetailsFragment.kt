@@ -5,9 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.core.os.bundleOf
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.shalinibusinesssolutions.ecommerce.R
 import com.shalinibusinesssolutions.ecommerce.databinding.FragmentRatingBinding
+import com.shalinibusinesssolutions.ecommerce.databinding.RatingdetailssinglerawBinding
+import com.shalinibusinesssolutions.ecommerce.ui.Fragmentinterface.Reviewinerface
 import com.shalinibusinesssolutions.ecommerce.ui.activities.ui.order.orderDetailsAdapter
 import com.shalinibusinesssolutions.ecommerce.ui.adapter.OrderDetailsAdapter
 import com.shalinibusinesssolutions.ecommerce.ui.adapter.RatingDetailsAdapter
@@ -20,9 +25,10 @@ import com.shalinibusinesssolutions.ecommerce.ui.utility.popFragment
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.lang.Exception
 
 
-class RatingDetailsFragment : Fragment(),View.OnClickListener {
+class RatingDetailsFragment : Fragment(),View.OnClickListener,Reviewinerface {
 
     lateinit var binding : FragmentRatingBinding
     lateinit var ratingDetailsAdapter: RatingDetailsAdapter
@@ -34,7 +40,7 @@ class RatingDetailsFragment : Fragment(),View.OnClickListener {
     ): View? {
         binding= FragmentRatingBinding.inflate(layoutInflater,container,false)
         binding.recOrder.layoutManager= LinearLayoutManager(requireContext())
-        ratingDetailsAdapter= RatingDetailsAdapter()
+        ratingDetailsAdapter= RatingDetailsAdapter(this)
         binding.progressbar.visibility=View.VISIBLE
         binding.imgBack.setOnClickListener(this)
         getOrderListData()
@@ -83,7 +89,25 @@ class RatingDetailsFragment : Fragment(),View.OnClickListener {
             {
                 requireActivity().popFragment()
             }
+
         }
+    }
+
+    override fun reviewinerface(
+        RevOrderDetailsList: orderdetilslist,
+        binding: RatingdetailssinglerawBinding,
+        position: Int
+    ) {
+        try {
+            val ratingbundle= bundleOf("ReviewProductName" to RevOrderDetailsList.name.toString(),
+            "ReviewProductID" to RevOrderDetailsList.productid)
+            findNavController().navigate(R.id.action_ratingDetailsFragment_to_reviewFragment,ratingbundle)
+        }
+        catch (ex: Exception)
+        {
+
+        }
+
     }
 
 

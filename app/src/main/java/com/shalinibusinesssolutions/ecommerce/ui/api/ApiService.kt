@@ -432,4 +432,68 @@ interface ApiService {
     @GET("getProduct.php")
     fun getProductData(): Call<ProductResponse>
 
+
+
+    @FormUrlEncoded
+    @POST("exsitratingandReview.php")
+    fun getExistProductResponse(
+        @Field("userid") userid: Int?,
+        @Field("productid") productid: Int?
+        ): Call<GetAddToCardResponse>
+
+
+    @FormUrlEncoded
+    @POST("addRating.php")
+    fun addToRating(
+        @Field("userid") userid: Int?,
+        @Field("productid") productid: Int?,
+        @Field("rating") rating: Int?
+    ): Call<AddToCartResponse>
+
+    @FormUrlEncoded
+    @POST("updateRating.php")
+    fun updateToRating(
+        @Field("userid") userid: Int?,
+        @Field("productid") productid: Int?,
+        @Field("rating") rating: Int?
+    ): Call<AddToCartResponse>
+
+
+    @FormUrlEncoded
+    @POST("getRatingData.php")
+    fun getRatingData(
+        @Field("userid") userid: Int?,
+        @Field("productid") productid: Int?
+        ): Call<GetRatingDetailsResponse>
+
+
+    @FormUrlEncoded
+    @POST("AddReview.php")
+    fun addToReview(
+        @Field("userid") userid: Int?,
+        @Field("productid") productid: Int?,
+        @Field("Review") Review: String?
+    ): Call<AddToCartResponse>
+
+    @FormUrlEncoded
+    @POST("UpdateReview.php")
+    fun updateToReview(
+        @Field("userid") userid: Int?,
+        @Field("productid") productid: Int?,
+        @Field("Review") Review: String?
+    ): Call<AddToCartResponse>
+
+
+    @FormUrlEncoded
+    @POST("getReview.php")
+    fun getReviewDetails(
+        @Field("productid") productid: Int?
+    ): Call<GetRatingDetailsResponse>
+
+    @FormUrlEncoded
+    @POST("getTotalReviewUser.php")
+    fun getTotalReviewUser(
+        @Field("productid") productid: Int?
+    ): Call<GetTotalRatingResponse>
+
 }

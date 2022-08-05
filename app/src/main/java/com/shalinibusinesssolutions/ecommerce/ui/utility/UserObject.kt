@@ -27,7 +27,8 @@ object UserObject {
     var  orderProduct_ordervalue=0.0f
     var  orderProduct_addreessid=0
      var  orderdate= ""
-
+      var ProductTotalRating=0
+      var totalrating=0
 
 }
 
