@@ -240,28 +240,28 @@
                     android:layout_marginTop="20dp"/>
 
 
-<!--                <com.facebook.shimmer.ShimmerFrameLayout-->
-<!--                    android:id="@+id/shimmer_view_container"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="center"-->
-<!--                    android:orientation="vertical">-->
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
 
 
-<!--                    <LinearLayout-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:orientation="vertical">-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
-<!--                        <include layout="@layout/review_place" />-->
+                        <include layout="@layout/review_place" />
 
-<!--                        <include layout="@layout/review_place" />-->
+                        <include layout="@layout/review_place" />
 
-<!--                        <include layout="@layout/review_place" />-->
+                        <include layout="@layout/review_place" />
 
-<!--                    </LinearLayout>-->
+                    </LinearLayout>
 
-<!--                </com.facebook.shimmer.ShimmerFrameLayout>-->
+                </com.facebook.shimmer.ShimmerFrameLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rec_review"

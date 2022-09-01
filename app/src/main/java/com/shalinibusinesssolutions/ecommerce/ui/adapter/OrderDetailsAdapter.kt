@@ -42,4 +42,6 @@ class OrderDetailsAdapter  : RecyclerView.Adapter<OrderDetailsAdapter.viewHolder
         modelList = newlist
         result.dispatchUpdatesTo(this)
     }
+
+
 }

@@ -342,6 +342,8 @@ class ReviewFragment : Fragment(),View.OnClickListener {
                         reviewDetailsAdapter.Populistitem(rivewdata)
                         binding.recReview?.adapter=reviewDetailsAdapter
                         binding.progressbar?.visibility=View.GONE
+                        binding.shimmerViewContainer.stopShimmer()
+                        binding.shimmerViewContainer.visibility=View.GONE
 
                     }
                 }

@@ -120,7 +120,8 @@ class SignInActivity : AppCompatActivity(), View.OnClickListener {
 
                                             startActivity(Intent(this, MainActivity::class.java))
                                             binding.progressbar.visibility = View.GONE
-                                        } else if (UsetResponse?.status == "user not found") {
+                                        }
+                                        else if (UsetResponse?.status == "user not found") {
                                             addUserViewModel.addUser(email, password)
                                             addUserViewModel.response.observe(
                                                 this,
